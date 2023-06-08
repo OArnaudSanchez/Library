@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Library.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Library.Application": "1.0.0"
+        },
         "runtime": {
           "Library.Infrastructure.dll": {}
+        }
+      },
+      "Library.Application/1.0.0": {
+        "dependencies": {
+          "Library.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Library.Application.dll": {}
+        }
+      },
+      "Library.Domain/1.0.0": {
+        "runtime": {
+          "Library.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Library.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

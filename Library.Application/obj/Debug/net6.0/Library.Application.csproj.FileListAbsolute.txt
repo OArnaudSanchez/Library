@@ -10,3 +10,6 @@ C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Li
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\obj\Debug\net6.0\refint\Library.Application.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\obj\Debug\net6.0\Library.Application.pdb
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\obj\Debug\net6.0\ref\Library.Application.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\bin\Debug\net6.0\Library.Domain.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\bin\Debug\net6.0\Library.Domain.pdb
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Application\obj\Debug\net6.0\Library.Application.csproj.CopyComplete

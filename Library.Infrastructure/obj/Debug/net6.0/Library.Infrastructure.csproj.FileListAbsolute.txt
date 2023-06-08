@@ -10,3 +10,8 @@ C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Li
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\obj\Debug\net6.0\refint\Library.Infrastructure.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\obj\Debug\net6.0\Library.Infrastructure.pdb
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\obj\Debug\net6.0\ref\Library.Infrastructure.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\bin\Debug\net6.0\Library.Application.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\bin\Debug\net6.0\Library.Domain.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\bin\Debug\net6.0\Library.Application.pdb
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\bin\Debug\net6.0\Library.Domain.pdb
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.Infrastructure\obj\Debug\net6.0\Library.Infrastructure.csproj.CopyComplete

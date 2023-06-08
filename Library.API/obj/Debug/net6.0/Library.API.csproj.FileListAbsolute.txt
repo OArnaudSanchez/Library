@@ -30,3 +30,9 @@ C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Li
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\obj\Debug\net6.0\Library.API.pdb
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\obj\Debug\net6.0\Library.API.genruntimeconfig.cache
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\obj\Debug\net6.0\ref\Library.API.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Application.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Domain.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Infrastructure.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Application.pdb
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Infrastructure.pdb
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\Library.Domain.pdb
