@@ -1,6 +1,6 @@
-﻿using Library.Application.Interfaces.Persistence;
+﻿using Library.Application.Exceptions;
+using Library.Application.Interfaces.Persistence;
 using Library.Domain.Entities;
-using Library.Domain.Exceptions;
 using Library.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +23,7 @@ namespace Library.Infrastructure.Repositories
         public async Task<Book> GetBookAsync(Guid bookId, CancellationToken cancellationToken)
         {
             return await _dbContext.Books.FirstOrDefaultAsync(book => book.Id == bookId, cancellationToken)
-                ?? throw new NotFoundException($"Book With ID: {bookId} Was Not Found."); ;
+                ?? throw new NotFoundException(nameof(Book), bookId);
         }
 
         public async Task AddBookAsync(Book book, CancellationToken cancellationToken)

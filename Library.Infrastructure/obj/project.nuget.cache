@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "mk3ZDbmyxsCeeSJcR8lTR5e5d/dMnYq2+Vuh93XaF2NEDuYhVhcKhZoETueDIgaooaDb0PdDlubfABn4ZkuzUw==",
+  "dgSpecHash": "wXHkz7uHvpjQlcvabRc7m3ypnFwAwZjYuqz+dRZC5liEYeLNr4fR5E1AJ8YEidS2LfsR2ncFqvBV4y8hCfA/BQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\OseasArnaudSanchez\\Downloads\\Courses\\. NET Practices\\Library Project\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

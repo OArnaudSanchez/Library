@@ -95,3 +95,5 @@ C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Li
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

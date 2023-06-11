@@ -1,6 +1,6 @@
-﻿using Library.Application.Interfaces.Persistence;
+﻿using Library.Application.Exceptions;
+using Library.Application.Interfaces.Persistence;
 using Library.Domain.Entities;
-using Library.Domain.Exceptions;
 using Library.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +23,7 @@ namespace Library.Infrastructure.Repositories
         public async Task<Author> GetAuthorAsync(Guid authorId, CancellationToken cancellationToken)
         {
             return await _dbContext.Authors.FirstOrDefaultAsync(author => author.Id == authorId)
-                ?? throw new NotFoundException($"Author With ID: {authorId} Was Not Found.");
+                ?? throw new NotFoundException(nameof(Author), authorId);
         }
 
         public async Task AddAuthorAsync(Author author, CancellationToken cancellationToken)

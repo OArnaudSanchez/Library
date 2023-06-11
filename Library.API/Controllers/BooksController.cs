@@ -1,4 +1,7 @@
 ﻿using Library.Application.DTOs;
+using Library.Application.Features.Books.Command.CreateBook;
+using Library.Application.Features.Books.Command.DeleteBook;
+using Library.Application.Features.Books.Command.UpdateBook;
 using Library.Application.Features.Books.Queries.GetBook;
 using Library.Application.Features.Books.Queries.GetBooks;
 using MediatR;
@@ -31,17 +34,25 @@ namespace Library.API.Controllers
             return Ok(book);
         }
 
-        //TODO:
-        /*
-            1. Create Missing Controllers,
-            2. Create Validations with FluentValidation,
-            3. Add ILogger,
-            4. Add GlobalExceptionFilters and Exceptions,
-            5. Add Tests
-            6. Add Log Properties
-            7. Add Content Negociation
-            8. Add Hateoas
-            9. Add CI Pipeline
-         */
+        [HttpPost(Name = nameof(CreateBook))]
+        public async Task<ActionResult<BookDto>> CreateBook([FromBody] CreateBookCommand bookCommand)
+        {
+            var createdBook = await _mediator.Send(bookCommand);
+            return Created(nameof(GetBook), new { bookId = createdBook.BookId, createdBook });
+        }
+
+        [HttpPut(Name = nameof(UpdateBook))]
+        public async Task<ActionResult> UpdateBook([FromBody] UpdateBookCommand bookCommand)
+        {
+            await _mediator.Send(bookCommand);
+            return NoContent();
+        }
+
+        [HttpDelete("bookId", Name = nameof(DeleteBook))]
+        public async Task<ActionResult> DeleteBook(Guid bookId)
+        {
+            await _mediator.Send(new DeleteBookCommand { BookId = bookId });
+            return NoContent();
+        }
     }
 }

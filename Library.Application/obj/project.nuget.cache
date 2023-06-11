@@ -1,14 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "2dcRi7AJZxJFjx0MzGq9yxQXrhsid41HaSsd2allPWzP5VJbb8JAd5ObD9nQ+AZk6+tr+HkAelZAE9IkPw/plw==",
+  "dgSpecHash": "N0HEtjCBDvU3bZOdoPdgHFW8vkDdWXby5fCtDTejD8CpGunNqN4gx5HXfJ/dA9j+lOLgyRvzkxzXAJ22e1eauQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\OseasArnaudSanchez\\Downloads\\Courses\\. NET Practices\\Library Project\\Library\\Library.Application\\Library.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -21,7 +21,7 @@ namespace Library.Application.Features.Authors.Command.UpdateAuthor
             currentAuthor.Id = currentAuthor.Id;
             currentAuthor.Name = currentAuthor.Name;
             currentAuthor.LastName = currentAuthor.LastName;
-            currentAuthor.Email = request.Email;
+            currentAuthor.Email = request.Email ?? currentAuthor.Email;
             currentAuthor.Gender = request.Gender;
             currentAuthor.BirthDate = currentAuthor.BirthDate;
 

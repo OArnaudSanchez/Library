@@ -5,7 +5,8 @@ namespace Library.Infrastructure.Persistence.Context
 {
     public class LibraryDbContext : DbContext
     {
-        public LibraryDbContext(DbContextOptions<LibraryDbContext> options) : base(options)
+        public LibraryDbContext(DbContextOptions<LibraryDbContext> options)
+            : base(options)
         {
         }
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RmcGRQNpywb3BkxrVUA/32knjK2sUXhvhyTq56ZCYiDse2B5+0bSJuU2XZ28Tudr1eOLRlc+7pxbR7OuR7OXjQ==",
+  "dgSpecHash": "tb9hxHyEqaVTO8JdAizQhXm2A5RvqHH3dQaI93vqa14ze/NkOeDAlfi2lDGoB8lfZzArAiQI6Zkr7TynnG2Ekw==",
   "success": true,
   "projectFilePath": "C:\\Users\\OseasArnaudSanchez\\Downloads\\Courses\\. NET Practices\\Library Project\\Library\\Library.ArchitectureTests\\Library.ArchitectureTests.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\OseasArnaudSanchez\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
