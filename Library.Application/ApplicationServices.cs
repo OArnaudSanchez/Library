@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Library.Application.Configurations
+namespace Library.Application
 {
     public static class ApplicationServices
     {

@@ -168,3 +168,8 @@ C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Li
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\Mono.Cecil.Mdb.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\Mono.Cecil.Pdb.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\Mono.Cecil.Rocks.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\Mono.Cecil.dll
+C:\Users\OseasArnaudSanchez\Downloads\Courses\. NET Practices\Library Project\Library\Library.ArchitectureTests\bin\Debug\net6.0\NetArchTest.Rules.dll

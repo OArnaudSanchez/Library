@@ -1,6 +1,6 @@
-using Library.API.Configurations;
-using Library.Application.Configurations;
-using Library.Infrastructure.Configurations;
+using Library.API;
+using Library.Application;
+using Library.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

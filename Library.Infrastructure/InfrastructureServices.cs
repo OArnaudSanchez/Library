@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Library.Infrastructure.Configurations
+namespace Library.Infrastructure
 {
     public static class InfrastructureServices
     {

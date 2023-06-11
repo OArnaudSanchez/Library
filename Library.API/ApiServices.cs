@@ -1,7 +1,7 @@
 ﻿using Library.API.Filters;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Library.API.Configurations
+namespace Library.API
 {
     public static class ApiServices
     {
