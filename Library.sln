@@ -3,26 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.API", "Library.API\Library.API.csproj", "{8DA2727F-7297-48F2-8F14-51C9CF9AFE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Library.API\Library.API.csproj", "{8DA2727F-7297-48F2-8F14-51C9CF9AFE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Domain", "Library.Domain\Library.Domain.csproj", "{5E11DDAC-9280-413D-AE29-5F0487AC2A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Domain", "Library.Domain\Library.Domain.csproj", "{5E11DDAC-9280-413D-AE29-5F0487AC2A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Application", "Library.Application\Library.Application.csproj", "{D4EB5189-E68A-4C53-8C0B-F4341F26DEB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Application", "Library.Application\Library.Application.csproj", "{D4EB5189-E68A-4C53-8C0B-F4341F26DEB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Infrastructure", "Library.Infrastructure\Library.Infrastructure.csproj", "{7F916BC4-848E-4184-B9A9-6214C434960C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infrastructure", "Library.Infrastructure\Library.Infrastructure.csproj", "{7F916BC4-848E-4184-B9A9-6214C434960C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4646A516-7C13-4AB4-9D52-DA2A0C4ED643}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A67AE479-9B94-4D50-8943-1909CEACF7E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.UnitTests", "Library.UnitTests\Library.UnitTests.csproj", "{81B3EB9B-8A77-46FB-8283-58A107ABC480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.UnitTests", "Library.UnitTests\Library.UnitTests.csproj", "{81B3EB9B-8A77-46FB-8283-58A107ABC480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.ArchitectureTests", "Library.ArchitectureTests\Library.ArchitectureTests.csproj", "{D6A13AB9-BC67-4616-9878-28AD07EFB7A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.ArchitectureTests", "Library.ArchitectureTests\Library.ArchitectureTests.csproj", "{D6A13AB9-BC67-4616-9878-28AD07EFB7A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CDD2502-5C4C-4E34-BB09-97A572F5BBD8}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.IntegrationTests", "Library.IntegrationTests\Library.IntegrationTests.csproj", "{C465EA21-CAEB-4ECF-B6DC-77BD234BF529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +56,10 @@ Global
 		{D6A13AB9-BC67-4616-9878-28AD07EFB7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A13AB9-BC67-4616-9878-28AD07EFB7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A13AB9-BC67-4616-9878-28AD07EFB7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C465EA21-CAEB-4ECF-B6DC-77BD234BF529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C465EA21-CAEB-4ECF-B6DC-77BD234BF529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C465EA21-CAEB-4ECF-B6DC-77BD234BF529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C465EA21-CAEB-4ECF-B6DC-77BD234BF529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{7F916BC4-848E-4184-B9A9-6214C434960C} = {4646A516-7C13-4AB4-9D52-DA2A0C4ED643}
 		{81B3EB9B-8A77-46FB-8283-58A107ABC480} = {A67AE479-9B94-4D50-8943-1909CEACF7E9}
 		{D6A13AB9-BC67-4616-9878-28AD07EFB7A7} = {A67AE479-9B94-4D50-8943-1909CEACF7E9}
+		{C465EA21-CAEB-4ECF-B6DC-77BD234BF529} = {A67AE479-9B94-4D50-8943-1909CEACF7E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3797BFBA-B9BE-4FA3-B8AF-B894B8F850CB}
