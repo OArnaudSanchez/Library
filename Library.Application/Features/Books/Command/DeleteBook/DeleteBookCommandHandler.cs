@@ -1,4 +1,6 @@
-﻿using Library.Application.Interfaces.Persistence;
+﻿using Library.Application.Exceptions;
+using Library.Application.Interfaces.Persistence;
+using Library.Domain.Entities;
 using MediatR;
 
 namespace Library.Application.Features.Books.Command.DeleteBook
@@ -17,8 +19,12 @@ namespace Library.Application.Features.Books.Command.DeleteBook
 
         public async Task Handle(DeleteBookCommand request, CancellationToken cancellationToken)
         {
-            var currentBoook = await _bookRepository.GetBookAsync(request.BookId, cancellationToken);
-            _bookRepository.DeleteBookSync(currentBoook);
+            var currentBook = await _bookRepository.GetBookAsync(request.BookId, cancellationToken);
+            if (currentBook == null)
+            {
+                throw new NotFoundException(nameof(Book), request.BookId);
+            }
+            _bookRepository.DeleteBookSync(currentBook);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }

@@ -1,10 +1,10 @@
-﻿using Library.Application.Exceptions;
-using Library.Application.Interfaces.Persistence;
+﻿using Library.Application.Interfaces.Persistence;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence.Context;
 using Library.Infrastructure.Repositories;
 using Library.UnitTests.Fixture;
 using Library.UnitTests.Persistence;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +20,6 @@ namespace Library.UnitTests.Infrastructure.Repositories
 
         private readonly BookRepository _sut;
 
-        private readonly CancellationToken _token;
-
         private readonly LibraryDbContext _dbContext;
 
         private readonly IUnitOfWork _unitOfWork;
@@ -33,8 +31,6 @@ namespace Library.UnitTests.Infrastructure.Repositories
             _dbContext.Books.AddRange(_books);
             _dbContext.SaveChanges();
             _sut = new BookRepository(_dbContext);
-
-            _token = CancellationToken.None;
             _unitOfWork = new UnitOfWork(_dbContext);
             _dbContext.ChangeTracker.Clear();
         }
@@ -43,7 +39,7 @@ namespace Library.UnitTests.Infrastructure.Repositories
         public async Task BookRepository_Should_Return_AllBooks()
         {
             //Act
-            var books = await _sut.GetBooksAsync(_token);
+            var books = await _sut.GetBooksAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.True(_books.Count == books.Count());
@@ -56,21 +52,11 @@ namespace Library.UnitTests.Infrastructure.Repositories
             var testBookGuid = BookFixture.GetBookFixture().Id;
 
             //Act
-            var book = await _sut.GetBookAsync(testBookGuid, _token);
+            var book = await _sut.GetBookAsync(testBookGuid, It.IsAny<CancellationToken>());
 
             //Assert
             Assert.NotNull(book);
             Assert.IsType<Book>(book);
-        }
-
-        [Fact]
-        public async Task BookRepository_Should_Throw_AnExceptionWhenBookNotFound()
-        {
-            //Arrange
-            var testBookGuid = Guid.NewGuid();
-
-            //Assert
-            await Assert.ThrowsAsync<NotFoundException>(() => _sut.GetBookAsync(testBookGuid, _token));
         }
 
         [Fact]
@@ -88,9 +74,9 @@ namespace Library.UnitTests.Infrastructure.Repositories
             };
 
             //Act
-            await _sut.AddBookAsync(newBook, _token);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var allBooksDb = await _sut.GetBooksAsync(_token);
+            await _sut.AddBookAsync(newBook, It.IsAny<CancellationToken>());
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var allBooksDb = await _sut.GetBooksAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);
@@ -115,8 +101,8 @@ namespace Library.UnitTests.Infrastructure.Repositories
 
             //Act
             _sut.UpdateBookSync(currentBook);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var updatedBook = await _sut.GetBookAsync(testBookGuid, _token);
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var updatedBook = await _sut.GetBookAsync(testBookGuid, It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);
@@ -129,12 +115,12 @@ namespace Library.UnitTests.Infrastructure.Repositories
         {
             //Arrange
             var testBookGuid = BookFixture.GetBookFixture().Id;
-            var currentBook = await _sut.GetBookAsync(testBookGuid, _token);
+            var currentBook = await _sut.GetBookAsync(testBookGuid, It.IsAny<CancellationToken>());
 
             //Act
             _sut.DeleteBookSync(currentBook);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var allBooksDb = await _sut.GetBooksAsync(_token);
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var allBooksDb = await _sut.GetBooksAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);

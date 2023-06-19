@@ -1,10 +1,10 @@
-﻿using Library.Application.Exceptions;
-using Library.Application.Interfaces.Persistence;
+﻿using Library.Application.Interfaces.Persistence;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence.Context;
 using Library.Infrastructure.Repositories;
 using Library.UnitTests.Fixture;
 using Library.UnitTests.Persistence;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +20,6 @@ namespace Library.UnitTests.Infrastructure.Repositories
 
         private readonly AuthorRepository _sut;
 
-        private readonly CancellationToken _token;
-
         private readonly LibraryDbContext _dbContext;
 
         private readonly IUnitOfWork _unitOfWork;
@@ -33,8 +31,6 @@ namespace Library.UnitTests.Infrastructure.Repositories
             _dbContext.Authors.AddRange(_authors);
             _dbContext.SaveChanges();
             _sut = new AuthorRepository(_dbContext);
-
-            _token = CancellationToken.None;
             _unitOfWork = new UnitOfWork(_dbContext);
             _dbContext.ChangeTracker.Clear();
         }
@@ -43,7 +39,7 @@ namespace Library.UnitTests.Infrastructure.Repositories
         public async Task AuthorRepository_Should_Return_AllAuthors()
         {
             //Act
-            var result = await _sut.GetAuthorsAsync(_token);
+            var result = await _sut.GetAuthorsAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.True(_authors.Count == result.Count());
@@ -56,23 +52,11 @@ namespace Library.UnitTests.Infrastructure.Repositories
             var testAuthorGuid = AuthorFixture.GetAuthorFixture().Id;
 
             //Act
-            var result = await _sut.GetAuthorAsync(testAuthorGuid, _token);
+            var result = await _sut.GetAuthorAsync(testAuthorGuid, It.IsAny<CancellationToken>());
 
             //Assert
             Assert.NotNull(result);
             Assert.IsType<Author>(result);
-        }
-
-        [Fact]
-        public async Task AuthorRepository_Should_Throw_AnExceptionWhenAuthorNotFound()
-        {
-            //Arrange
-            var testAuthorGuid = Guid.NewGuid();
-
-            //Act
-
-            //Assert
-            await Assert.ThrowsAsync<NotFoundException>(() => _sut.GetAuthorAsync(testAuthorGuid, _token));
         }
 
         [Fact]
@@ -90,9 +74,9 @@ namespace Library.UnitTests.Infrastructure.Repositories
             };
 
             //Act
-            await _sut.AddAuthorAsync(newAuthor, _token);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var allAuthorsDb = await _sut.GetAuthorsAsync(_token);
+            await _sut.AddAuthorAsync(newAuthor, It.IsAny<CancellationToken>());
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var allAuthorsDb = await _sut.GetAuthorsAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);
@@ -117,8 +101,8 @@ namespace Library.UnitTests.Infrastructure.Repositories
 
             //Act
             _sut.UpdateAuthorSync(updateAuthor);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var currentAuthor = await _sut.GetAuthorAsync(testAuthorGuid, _token);
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var currentAuthor = await _sut.GetAuthorAsync(testAuthorGuid, It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);
@@ -131,12 +115,12 @@ namespace Library.UnitTests.Infrastructure.Repositories
         {
             //Arrange
             var testAuthorGuid = AuthorFixture.GetAuthorFixture().Id;
-            var currentAuthor = await _sut.GetAuthorAsync(testAuthorGuid, _token);
+            var currentAuthor = await _sut.GetAuthorAsync(testAuthorGuid, It.IsAny<CancellationToken>());
 
             //Act
             _sut.DeleteAuthorSync(currentAuthor);
-            var result = await _unitOfWork.SaveChangesAsync(_token);
-            var allAuthors = await _sut.GetAuthorsAsync(_token);
+            var result = await _unitOfWork.SaveChangesAsync(It.IsAny<CancellationToken>());
+            var allAuthors = await _sut.GetAuthorsAsync(It.IsAny<CancellationToken>());
 
             //Assert
             Assert.Equal(1, result);
