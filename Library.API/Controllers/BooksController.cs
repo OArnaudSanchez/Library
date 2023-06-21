@@ -31,6 +31,10 @@ namespace Library.API.Controllers
         public async Task<ActionResult<BookDto>> GetBook(Guid bookId)
         {
             var book = await _mediator.Send(new GetBookQuery { BookId = bookId });
+            if (book == null)
+            {
+                return NotFound();
+            }
             return Ok(book);
         }
 

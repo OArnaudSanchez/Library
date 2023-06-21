@@ -14,7 +14,6 @@ namespace Library.API.Controllers
     public class AuthorsController : ControllerBase
     {
         //TODO: 1. Create Key Vault, Azure SQL Server DB, App Service and configure connection string from key vault, Create CI/CD Pipelines to deploy to Azure App Service.
-        //TODO: 2. Document API, Centralize DbContext and DB Creation for Tests
         private readonly IMediator _mediator;
 
         public AuthorsController(IMediator mediator)
@@ -33,6 +32,10 @@ namespace Library.API.Controllers
         public async Task<ActionResult<AuthorDto>> GetAuthor(Guid authorId)
         {
             var author = await _mediator.Send(new GetAuthorQuery { AuthorId = authorId });
+            if (author == null)
+            {
+                return NotFound();
+            }
             return Ok(author);
         }
 
