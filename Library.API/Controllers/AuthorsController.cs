@@ -13,7 +13,6 @@ namespace Library.API.Controllers
     [ApiController]
     public class AuthorsController : ControllerBase
     {
-        //TODO: 1. Create Key Vault, Azure SQL Server DB, App Service and configure connection string from key vault, Create CI/CD Pipelines to deploy to Azure App Service.
         private readonly IMediator _mediator;
 
         public AuthorsController(IMediator mediator)
