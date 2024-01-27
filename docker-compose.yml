@@ -1,0 +1,32 @@
+version: '3'
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: library-db
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=!sASpaso12312@3
+    networks:
+      - library-net
+    volumes:
+    - db-data-vol:/var/opt/mssql/data
+  api:
+    container_name: library-api
+    image: library-api
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - library-net
+networks:
+  library-net:
+
+volumes:
+  db-data-vol:
